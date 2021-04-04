@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup - {{title}} </title>
+
+    <!-- BOOTSTRAP CSS -->
+    <link rel = "stylesheet" type = "text/css" href = "{{ url_for('static', filename = 'css/bootstrap.min.css') }}">
+    <link rel = "stylesheet" type = "text/css" href = "{{ url_for('static', filename = 'css/site.css') }}">
+    <link rel = "stylesheet" type = "text/css" href = "{{ url_for('static', filename = 'css/style.css') }}">
+</head>
+<body>
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-5">
+                <h1 class = "text-center">Log-in form</h1>
+                <label class = "label control - label"> User E-mail</label>
+                <div class = "input-group">
+                    <span class = "input-group-addon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill-rule="evenodd" 
+                            d="M1.75 3A1.75 1.75 0 000 4.75v14c0 .966.784 1.75 1.75 1.75h20.5A1.75 1.75 0 0024 18.75v-14A1.75 1.75 0 0022.25 3H1.75zM1.5 4.75a.25.25 0 01.25-.25h20.5a.25.25 0 01.25.25v.852l-10.36 7a.25.25 0 01-.28 0l-10.36-7V4.75zm0 2.662V18.75c0 .138.112.25.25.25h20.5a.25.25 0 00.25-.25V7.412l-9.52 6.433c-.592.4-1.368.4-1.96 0L1.5 7.412z"/>
+                        </svg>
+                    </span>
+                    <input type = "text" class = "form-control" name = "mail" placeholder="E-mail">
+                </div>
+                <label class = "label control - label"> User Password</label>
+                <div class = "input-group">
+                    <span class = "input-group-addon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path 
+                            d="M16.75 8.5a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5z"/><path fill-rule="evenodd" d="M15.75 0a8.25 8.25 0 00-7.851 10.79L.513 18.178A1.75 1.75 0 000 19.414v2.836C0 23.217.784 24 1.75 24h1.5A1.75 1.75 0 005 22.25v-1a.25.25 0 01.25-.25h2.735a.75.75 0 00.545-.22l.214-.213A.875.875 0 009 19.948V18.5a.25.25 0 01.25-.25h1.086c.464 0 .91-.184 1.237-.513l1.636-1.636A8.25 8.25 0 1015.75 0zM9 8.25a6.75 6.75 0 114.288 6.287.75.75 0 00-.804.168l-1.971 1.972a.25.25 0 01-.177.073H9.25A1.75 1.75 0 007.5 18.5v1H5.25a1.75 1.75 0 00-1.75 1.75v1a.25.25 0 01-.25.25h-1.5a.25.25 0 01-.25-.25v-2.836a.25.25 0 01.073-.177l7.722-7.721a.75.75 0 00.168-.804A6.73 6.73 0 019 8.25z"/>
+                        </svg>
+                    </span>
+                    <input type = "password" class = "form-control" name = "pass" placeholder="Password">
+                </div>
+                <div class = "row">
+                    <div class = "col-md-6">
+                        <input type = "checkbox"> <small>Remember me</small>
+                    </div>
+                    <div class = "col-md-6"> 
+                        <a href = "#"><p class = "text-right">Forgot Password?</p> </a>
+                    </div>
+                </div>
+                <a href = "#"><div class = "btn btn-primary">LOG IN</div></a>
+                <p class = "text-center">Not a member yet? <a href = "#">Sign up</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.js.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src = "{{ url_for('static', filename = 'js/bootstrap.min.js') }}"></script>
+
+</body>
+</html>

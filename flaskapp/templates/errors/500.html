@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block app_content %}
+
+<div>
+    {% from "_formhelpers.html" import render_field %}
+    <form method="post" enctype="multipart/form-data">
+        <div class = "container">
+            <div class = "row">
+                
+                <div class="col-md-5 col-sm-12 align-self-center">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1>Server error</h1>
+                            <p>A server error has occured. The admin has been notified</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</div>
+
+
+
+{% endblock app_content %}

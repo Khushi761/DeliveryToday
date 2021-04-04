@@ -1,0 +1,113 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+Body{
+    background-image: url("/static/images/Delogo.png");
+    background-attachment: fixed;
+    background-size: 100%, 100%;
+    font-family: 'Times New Roman', Times, serif;  
+}
+
+h1{
+    font-size: 50px;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.col-md-5{
+    background: rgba(0,0,0,0.5);
+    margin-top: 50px;
+}
+
+.label{
+    font-size: 20px;
+    font-weight: normal;
+    color: white;
+}
+
+.input-group{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.input-group-addon{
+    background: transparent;
+    border-radius: 0px;
+    border: 0px;
+    border-bottom: none;
+    font-size: 18px;
+    color: gray;
+}
+
+.form-control{
+    background: transparent;
+    border-radius: 0px;
+    border: 0px;
+    border-bottom: 1px solid gray;
+    padding: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+input[type = "checkbox"]{
+    height: 15px;
+    width: 15px;
+}
+
+small{
+    font-size: 15px;
+    color: bisque;
+}
+
+p{
+    font-size: 15px;
+    color: white;
+}
+ 
+.btn-default{
+    border-radius: 0px;
+    width: 447px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+    background-color: orange;
+}
+
+.btn-default:hover{
+    background-color:#3fb55d;
+}
+
+svg{
+    fill: gray;
+    height: 45px;
+}
+.img-responsive {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.img-rounded {
+    border-radius: 6px;
+}
+
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    background: green;
+    font-size: 24px;
+    padding: 25px;
+}
+
+.parallax{
+   background: url("/static/images/Delogo.png") no-repeat center;
+   background-size: cover;
+   background-attachment: fixed;
+   height: 500px;
+   border-radius: 25px;
+}

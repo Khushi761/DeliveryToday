@@ -1,0 +1,86 @@
+{% extends "admin-layout-driver.html" %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="font-weight-bold text-primary">Package details</h6>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                <tr>
+                                    <th>Package category</th>
+                                    <td>{{package.category}}</td>
+                                </tr>
+                                <tr>
+                                    <th>Amount of packages</th>
+                                    <td>{{package.amount}}</td>
+                                </tr>
+                                <tr>
+                                    <th>Package weight</th>
+                                    <td>{{package.weight}}</td>
+                                </tr>
+                                <tr>
+                                    <th>Package Size</th>
+                                    <td>{{package.size}}</td>
+                                </tr>
+                                <tr>
+                                    <th>Package type</th>
+                                    <td>{{package.pkgType}}</td>
+                                </tr>
+                                <tr>
+                                    <th>Pick-up address</th>
+                                    <td>{{package.pickup_address}}</td>
+                                </tr>
+                                <tr>
+                                    <th>Drop address</th>
+                                    <td>{{package.drop_address}}</td>
+                                </tr>
+                                <tr>
+                                    <th>Package comments and description</th>
+                                    <td>{{package.description}}</td>
+                                </tr>
+                                <tr>
+                                    <th>Delivery fee</th>
+                                    <td>£{{package.price}}</td>
+                                </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="font-weight-bold text-primary">Delivery owner details</h6>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                <tr>
+                                    <th>Delivery owner</th>
+                                    <td>{{package.user.fname}} {{package.user.lname}}</td>
+                                </tr>
+                                <tr>
+                                    <th>Contact email</th>
+                                    <td>{{package.user.email}}</td>
+                                </tr>
+                                <tr>
+                                    <th>Contact number</th>
+                                    <td>{{package.user.phoneno}}</td>
+                                </tr>
+                        </table>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}

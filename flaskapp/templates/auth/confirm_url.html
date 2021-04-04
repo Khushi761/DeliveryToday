@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block app_content %}
+
+<div class="card">
+    <div class="card-header">
+        <h6>Please confirm your e-mail address</h6>
+    </div>
+    <div class = "card-body">
+        <p>We have sent you a link to the address you entered earlier, please check your mail and click on the link to confirm your email.</p>
+        <p>Please check your spam/junk folder if you do not see an email as it can be diverted there at-times</p>
+        <h6>Did not receive an email? <a href = "{{ url_for('auth.resend_confirmation') }}">Resend email</a></h6>
+</div>
+
+{% endblock app_content %} 

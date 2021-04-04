@@ -1,0 +1,40 @@
+{% extends "admin-layout-driver.html" %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6">
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                        <h6 class="font-weight-bold text-primary">Profile</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4">
+                                <img src="{{ url_for('user.get_profile_pic', name=driver.profile_pic)}}" alt="" class="img-rounded img-responsive">
+                                <a href="{{url_for('driver.profile_pic')}}" class="btn btn-primary mt-2">Update</a>
+                            </div>
+                            <div class="col-sm-6 col-md-8">
+                                <h4>{{ driver.fname }} {{driver.lname}}</h4>
+                                <p>
+                                    <i class="fas fa-envelope"></i><a href="mailto:{{email}}">{{ driver.email }}</a>
+                                </p>
+                                <p>
+                                    <i class="fas fa-address-card"></i><span> {{ driver.phoneno }}</span>
+                                </p>
+                                <p>
+                                    <i class="fas fa-user"></i><span> {{ driver.account_type }}</span>
+                                </p>
+                                <p>
+                                    <a href="{{ url_for('driver.profile_update' )}}" class="btn btn-primary">Edit</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+

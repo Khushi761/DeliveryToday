@@ -1,0 +1,38 @@
+{% extends "admin-layout-driver.html" %}
+
+{% block content %}
+<div>
+    {% from "_formhelpers.html" import render_field %}
+    <form method="POST" enctype="multipart/form-data">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="font-weight-bold text-primary">UpdateForm</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-8">
+                                    <div>
+                                        {{ form.hidden_tag()}}
+                                        {{ render_field(form.fname, class="form-control")}}
+                                        {{ render_field(form.lname, class="form-control")}}
+                                        {{ render_field(form.email, class="form-control")}}
+                                        {{ render_field(form.phoneno, class="form-control")}}
+                                        {{ render_field(form.submit, class="btn btn-primary")}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+
+{% endblock content %}
